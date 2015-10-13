@@ -19,6 +19,7 @@ struct DatabaseItemType {
 
 class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    
     @IBOutlet var locationSegmentedControl: UISegmentedControl?
     @IBOutlet var prodDevSegmentedControl: UISegmentedControl?
     @IBOutlet var usernameTextField: UITextField?
@@ -39,6 +40,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hello-git")
+
         // Do any additional setup after loading the view, typically from a nib.
         testStruct()
     }
