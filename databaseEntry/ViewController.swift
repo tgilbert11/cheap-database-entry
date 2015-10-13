@@ -42,6 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDat
         super.viewDidLoad()
         print("hello-git again twice from remote edited again")
 
+        // oshit
         // Do any additional setup after loading the view, typically from a nib.
         testStruct()
     }
