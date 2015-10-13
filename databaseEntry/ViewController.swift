@@ -44,6 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDat
         
         // double edit
 
+        // oshit
         // Do any additional setup after loading the view, typically from a nib.
         testStruct()
     }
