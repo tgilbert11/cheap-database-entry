@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello-git")
+        print("hello-git again")
 
         // Do any additional setup after loading the view, typically from a nib.
         testStruct()
