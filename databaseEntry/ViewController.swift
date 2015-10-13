@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDat
         print("hello-git again twice from remote edited again")
         
         // double edit
+        print("should this one be first")
         print("or should this one")
         
         // oshit
