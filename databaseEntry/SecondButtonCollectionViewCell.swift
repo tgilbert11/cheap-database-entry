@@ -21,6 +21,7 @@ class SecondButtonCollectionViewCell: UICollectionViewCell {
     }
     
     override init(frame: CGRect) {
+        // a comment
         super.init(frame: frame)
         setup()
     }
