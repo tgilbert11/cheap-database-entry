@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="databaseEntry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-kV-X9o">
+                                <rect key="frame" x="278" y="20" width="120" height="29"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Away"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="D4i-Yd-xmQ">
+                                <rect key="frame" x="16" y="20" width="120" height="29"/>
+                                <segments>
+                                    <segment title="prod"/>
+                                    <segment title="dev"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="taylorg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7gP-5r-61A">
+                                <rect key="frame" x="159" y="20" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="kuq-YU-Ufp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="181.5" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOK-6A-0ur">
+                                <rect key="frame" x="159" y="458" width="74" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="KwO-Mq-Q4W"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3C-Ja-VaX">
+                                <rect key="frame" x="61" y="306" width="77" height="30"/>
+                                <state key="normal" title="had a drink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hadADrink" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cZL-yk-TMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubL-hb-AWQ">
+                                <rect key="frame" x="58" y="78" width="83" height="30"/>
+                                <state key="normal" title="left for work">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftForWork" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hhB-yE-MLj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs3-yF-JzE">
+                                <rect key="frame" x="69" y="154" width="60" height="30"/>
+                                <state key="normal" title="left work">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftWork" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hY9-DQ-9wA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-BN-YiC">
+                                <rect key="frame" x="76" y="458" width="46" height="30"/>
+                                <state key="normal" title="weight">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="weight" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z6D-ml-b2n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxg-OD-Ugr">
+                                <rect key="frame" x="65" y="382" width="68" height="30"/>
+                                <state key="normal" title="had water">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hadWater" destination="vXZ-lx-hvc" eventType="touchUpInside" id="483-Xc-OYz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlt-za-8OV">
+                                <rect key="frame" x="62" y="344" width="74" height="30"/>
+                                <state key="normal" title="had coffee">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hadCoffee" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d1t-7v-5V4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iF-Wm-cnH">
+                                <rect key="frame" x="37" y="420" width="124" height="30"/>
+                                <state key="normal" title="did some exercise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSomeExercise" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jxh-Zd-EPd"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-MY-4cM">
+                                <rect key="frame" x="16" y="679" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.404669822480622" blue="0.81782356194690264" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x3.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDM-yI-wKc">
+                                <rect key="frame" x="16" y="679" width="37" height="37"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ex6-zt-4JG">
+                                <rect key="frame" x="16" y="679" width="37" height="37"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1n-wO-7qL">
+                                <rect key="frame" x="84" y="610" width="30" height="30"/>
+                                <state key="normal" title="bio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bio" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BFV-6o-pcw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQu-lT-JvI">
+                                <rect key="frame" x="187" y="230" width="30" height="30"/>
+                                <state key="normal" title="light"/>
+                                <connections>
+                                    <action selector="ateLunchLight" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lBt-u9-bGX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwr-Ry-pCu">
+                                <rect key="frame" x="225" y="230" width="31" height="30"/>
+                                <state key="normal" title="mod"/>
+                                <connections>
+                                    <action selector="ateLunch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CHi-tR-gVM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-ZK-BL2">
+                                <rect key="frame" x="264" y="230" width="41" height="30"/>
+                                <state key="normal" title="heavy"/>
+                                <connections>
+                                    <action selector="ateLunchHeavy" destination="vXZ-lx-hvc" eventType="touchUpInside" id="61c-QS-CyM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4W-df-7Az">
+                                <rect key="frame" x="187" y="268" width="30" height="30"/>
+                                <state key="normal" title="light"/>
+                                <connections>
+                                    <action selector="ateDinnerLight" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rPM-DU-cAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUD-aB-D8N">
+                                <rect key="frame" x="225" y="268" width="31" height="30"/>
+                                <state key="normal" title="mod"/>
+                                <connections>
+                                    <action selector="ateDinner" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OMR-5D-aCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCT-0N-ZaN">
+                                <rect key="frame" x="264" y="268" width="41" height="30"/>
+                                <state key="normal" title="heavy"/>
+                                <connections>
+                                    <action selector="ateDinnerHeavy" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g65-Tc-JeT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0u-qP-9V2">
+                                <rect key="frame" x="187" y="572" width="30" height="30"/>
+                                <state key="normal" title="ave"/>
+                                <connections>
+                                    <action selector="wentToBed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KpX-B8-eHG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV4-hw-3kj">
+                                <rect key="frame" x="234" y="572" width="32" height="30"/>
+                                <state key="normal" title="tired"/>
+                                <connections>
+                                    <action selector="wentToBedTired" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mjC-Nn-DIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUM-8C-IJM">
+                                <rect key="frame" x="284" y="572" width="30" height="30"/>
+                                <state key="normal" title="exh"/>
+                                <connections>
+                                    <action selector="wentToBedExhausted" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aZd-j3-iuY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-22-CSO">
+                                <rect key="frame" x="322" y="572" width="30" height="30"/>
+                                <state key="normal" title="h-o"/>
+                                <connections>
+                                    <action selector="wentToBedHungover" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FwW-Yp-f8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igs-ht-UMA">
+                                <rect key="frame" x="187" y="534" width="30" height="30"/>
+                                <state key="normal" title="ave"/>
+                                <connections>
+                                    <action selector="gotOutOfBed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CAZ-Bm-hjl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9Y-Nf-e0E">
+                                <rect key="frame" x="234" y="534" width="32" height="30"/>
+                                <state key="normal" title="tired"/>
+                                <connections>
+                                    <action selector="gotOutOfBedTired" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nae-vC-jfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pm-eE-rNs">
+                                <rect key="frame" x="284" y="534" width="30" height="30"/>
+                                <state key="normal" title="exh"/>
+                                <connections>
+                                    <action selector="gotOutOfBedExhausted" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lhN-i5-3C0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSX-kw-vUp">
+                                <rect key="frame" x="322" y="534" width="30" height="30"/>
+                                <state key="normal" title="h-o"/>
+                                <connections>
+                                    <action selector="gotOutOfBedHungover" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mcV-7F-WYQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-aD-aB4">
+                                <rect key="frame" x="187" y="496" width="30" height="30"/>
+                                <state key="normal" title="ave"/>
+                                <connections>
+                                    <action selector="firstAlarm" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WVy-nu-5xw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhf-ij-w6K">
+                                <rect key="frame" x="234" y="496" width="32" height="30"/>
+                                <state key="normal" title="tired"/>
+                                <connections>
+                                    <action selector="firstAlarmTired" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b5Y-J5-DPF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-Vb-dr2">
+                                <rect key="frame" x="284" y="496" width="30" height="30"/>
+                                <state key="normal" title="exh"/>
+                                <connections>
+                                    <action selector="firstAlarmExhausted" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ns7-dW-ctN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-Na-q80">
+                                <rect key="frame" x="322" y="496" width="30" height="30"/>
+                                <state key="normal" title="h-o"/>
+                                <connections>
+                                    <action selector="firstAlarmHungover" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W6Y-Pd-deC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="first alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-nC-wEZ">
+                                <rect key="frame" x="61" y="500" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="got out of bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGM-L4-3c4">
+                                <rect key="frame" x="45" y="538" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="went to bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kti-yI-XTw">
+                                <rect key="frame" x="54" y="576" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ate lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-hb-Fne">
+                                <rect key="frame" x="64" y="234" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="got home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq6-8r-Yi2">
+                                <rect key="frame" x="62" y="196" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ate dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-IF-hw3">
+                                <rect key="frame" x="61" y="272" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96P-31-hfc">
+                                <rect key="frame" x="187" y="192" width="41" height="30"/>
+                                <state key="normal" title="17-85"/>
+                                <connections>
+                                    <action selector="gotHome1785" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rzh-d9-G4M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQb-MP-hAp">
+                                <rect key="frame" x="236" y="192" width="32" height="30"/>
+                                <state key="normal" title="17-9"/>
+                                <connections>
+                                    <action selector="gotHome179" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z9q-ke-i0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3w-0v-c9C">
+                                <rect key="frame" x="276" y="192" width="59" height="30"/>
+                                <state key="normal" title="osch-85"/>
+                                <connections>
+                                    <action selector="gotHomeOSCH85" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S5O-mM-H17"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-an-VBX">
+                                <rect key="frame" x="344" y="192" width="50" height="30"/>
+                                <state key="normal" title="osch-9"/>
+                                <connections>
+                                    <action selector="gotHomeOSCH9" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yOt-3D-ruf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1n-ub-Iou">
+                                <rect key="frame" x="187" y="116" width="41" height="30"/>
+                                <state key="normal" title="17-85"/>
+                                <connections>
+                                    <action selector="gotToWork1785" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GBp-dG-9tp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3N-Fn-Vof">
+                                <rect key="frame" x="236" y="116" width="32" height="30"/>
+                                <state key="normal" title="17-9"/>
+                                <connections>
+                                    <action selector="gotToWork179" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ReM-y8-930"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-ab-g29">
+                                <rect key="frame" x="276" y="116" width="59" height="30"/>
+                                <state key="normal" title="osch-85"/>
+                                <connections>
+                                    <action selector="gotToWorkOSCH85" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qeo-68-gdN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-Gs-Kia">
+                                <rect key="frame" x="344" y="116" width="50" height="30"/>
+                                <state key="normal" title="osch-9"/>
+                                <connections>
+                                    <action selector="gotToWorkOSCH9" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WjH-e5-tAD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="got to work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahP-5i-BqG">
+                                <rect key="frame" x="56" y="120" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5y-gx-Lr9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.4999302455357143" green="0.4999302455357143" blue="0.4999302455357143" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="aKh-MY-4cM" id="6jV-Ht-yyi"/>
+                        <outlet property="buttonMaskView" destination="c5y-gx-Lr9" id="hoP-FH-2Wg"/>
+                        <outlet property="checkmarkImageView" destination="Ex6-zt-4JG" id="2cI-eK-Sxa"/>
+                        <outlet property="locationSegmentedControl" destination="lTt-kV-X9o" id="ll8-be-ORu"/>
+                        <outlet property="prodDevSegmentedControl" destination="D4i-Yd-xmQ" id="itB-zh-nJb"/>
+                        <outlet property="usernameTextField" destination="7gP-5r-61A" id="Wju-76-sJ9"/>
+                        <outlet property="weightTextField" destination="TOK-6A-0ur" id="d3G-iS-USl"/>
+                        <outlet property="xImageView" destination="yDM-yI-wKc" id="UD1-b9-TFt"/>
+                        <segue destination="utK-UJ-sFA" kind="presentation" identifier="showReadAll" id="awg-ss-nj6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="381"/>
+        </scene>
+        <!--Read All View Controller-->
+        <scene sceneID="Qrk-tu-3On">
+            <objects>
+                <viewController id="utK-UJ-sFA" customClass="ReadAllViewController" customModule="databaseEntry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KlC-bu-OxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qcg-ib-kUL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qMQ-xd-M43">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxe-LG-8ke">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="eFd-gg-Hl4">
+                                        <connections>
+                                            <action selector="dismiss" destination="utK-UJ-sFA" id="J6s-uV-h5N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hji-I0-G0B">
+                                <rect key="frame" x="0.0" y="20" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="textView" destination="hji-I0-G0B" id="aOj-Np-SEJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xl-mu-XxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark3.png" width="813" height="813"/>
+        <image name="x3.png" width="813" height="813"/>
+    </resources>
+</document>
